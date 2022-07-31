@@ -10,7 +10,7 @@ import Img21 from '../assets/pinterest.png';
 export default function Footer() {
   return (
     <div>
-        <section className="info_section ">
+      <section className="info_section ">
         <div className="container">
           <div className="info_container">
             <div className="info_social">

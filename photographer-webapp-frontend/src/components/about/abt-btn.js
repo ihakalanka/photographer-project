@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Img3 from '../../assets/about-img.jpg';
 import Img4 from '../../assets/about-img-bg.png';
@@ -6,7 +7,7 @@ import Img4 from '../../assets/about-img-bg.png';
 export default function AbtBtn() {
   return (
     <div>
-        <section className="about_section layout_padding">
+      <section className="about_section layout_padding">
         <div className="container">
           <div className="heading_container">
             <h2>
@@ -26,10 +27,10 @@ export default function AbtBtn() {
                 looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
                 letters,
               </p>
-              <div style={{color: 'white'}}>
-                <a href>
+              <div style={{ color: 'white' }}>
+                <Link to={"/about"}>
                   about More
-                </a>
+                </Link>
               </div>
             </div>
           </div>

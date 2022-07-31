@@ -13,7 +13,7 @@ export default function About() {
                     <div className="container-fluid">
                         <div className="row">
                             <div className="col-lg-11 offset-lg-1">
-                                <Navbar/>
+                                <Navbar />
                             </div>
                         </div>
                     </div>
@@ -21,11 +21,11 @@ export default function About() {
                 {/* end header section */}
             </div>
             {/* about section */}
-           <Abt/>
+            <Abt />
             {/* end about section */}
             {/* info section */}
             <div>
-                <Footer/>
+                <Footer />
             </div>
         </div>
     )

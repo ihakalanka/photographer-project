@@ -25,7 +25,7 @@ export default function Home() {
             <div className="row">
               <div className="col-lg-11 offset-lg-1">
 
-                <Navbar/>
+                <Navbar />
 
               </div>
             </div>
@@ -34,18 +34,18 @@ export default function Home() {
         {/* end header section */}
         {/* slider section */}
 
-        <Slider/>
+        <Slider />
 
         {/* end slider section */}
       </div>
       {/* about section */}
 
-      <AbtBtn/>
-      
+      <AbtBtn />
+
       {/* end about section */}
       {/* portfolio section */}
 
-      <PortBtn/>
+      <PortBtn />
 
       {/* end about section */}
       {/* achieve section */}
@@ -183,14 +183,14 @@ export default function Home() {
       </section>
       {/* end client section */}
       {/* contact section */}
-      
-      <Form/>
+
+      <Form />
 
       {/* end contact section */}
       {/* info section */}
 
-      <Footer/>
-      
+      <Footer />
+
     </div>
 
   );
