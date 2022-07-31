@@ -6,7 +6,7 @@ import Img4 from '../../assets/about-img-bg.png';
 export default function Abt() {
   return (
     <div>
-        <section className="about_section layout_padding">
+      <section className="about_section layout_padding">
         <div className="container">
           <div className="heading_container">
             <h2>

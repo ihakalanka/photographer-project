@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Img5 from '../../assets/p-1.jpg';
 import Img6 from '../../assets/p-2.jpg';
@@ -10,7 +11,7 @@ import Img10 from '../../assets/p-6.jpg';
 export default function PortBtn() {
   return (
     <div>
-        <section className="portfolio_section layout_padding">
+      <section className="portfolio_section layout_padding">
         <div className="container">
           <div className="heading_container">
             <h2>
@@ -75,9 +76,9 @@ export default function PortBtn() {
             </div>
           </div>
           <div className="see_btn" style={{ color: 'white' }}>
-            <a href>
+            <Link to={"/portfolio"}>
               See More
-            </a>
+            </Link>
           </div>
         </div>
       </section>
