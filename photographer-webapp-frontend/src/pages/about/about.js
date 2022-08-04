@@ -25,7 +25,7 @@ export default function About() {
             {/* end about section */}
             {/* info section */}
             <div>
-                <Footer />
+                 <Footer />
             </div>
         </div>
     )
