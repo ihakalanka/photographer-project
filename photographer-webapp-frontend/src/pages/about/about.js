@@ -18,7 +18,7 @@ export default function About() {
                         </div>
                     </div>
                 </header>
-                {/* end header section */}
+              {/* end header section */}
             </div>
             {/* about section */}
             <Abt />
