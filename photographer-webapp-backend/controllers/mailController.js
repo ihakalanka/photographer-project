@@ -13,7 +13,7 @@ exports.sendMail = async (req, res) => {
 
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
-      }
+    }
 
     let nameWithCap = capitalizeFirstLetter(name);
     let msgWithCap = capitalizeFirstLetter(message);
@@ -28,7 +28,7 @@ exports.sendMail = async (req, res) => {
         })
 
         const mailOptions = {
-            from: `"${nameWithCap} 👻"<user>` ,
+            from: `"${nameWithCap} 👻"<user>`,
             to: email,
             subject: `Subscribed by ${nameWithCap}`,
             html: `
@@ -49,15 +49,28 @@ exports.sendMail = async (req, res) => {
         }
 
         mail.sendMail(mailOptions, (err, info) => {
-            if (err){
+            if (err) {
                 errorResponse(res, null, null, err);
             }
-            else{
-                successResponse(res, 'Email sent',info.response);
+            else {
+                try{
+                    const newUser = new Contact({
+                        name,
+                        mobileNo,
+                        email,
+                        message
+                    });
+                    newUser.save();
+                    successResponse(res, 'New user saved', info.response);
+                }
+                catch(err){
+                    errorResponse(res, null, null, err);
+                }
+                successResponse(res, 'Email sent', info.response);
             }
         })
     }
-    catch(err){
+    catch (err) {
         errorResponse(res, null, null, err);
     }
 }
