@@ -53,7 +53,7 @@ exports.sendMail = async (req, res) => {
                 errorResponse(res, null, null, err);
             }
             else {
-                try{
+                try {
                     const newUser = new Contact({
                         name,
                         mobileNo,
@@ -63,7 +63,7 @@ exports.sendMail = async (req, res) => {
                     newUser.save();
                     successResponse(res, 'New user saved', info.response);
                 }
-                catch(err){
+                catch (err) {
                     errorResponse(res, null, null, err);
                 }
                 successResponse(res, 'Email sent', info.response);
